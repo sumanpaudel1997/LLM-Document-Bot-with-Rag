@@ -32,12 +32,12 @@ To get started, follow these steps:
 ## Sample App in Action
 
 Sample 1
-- <img src='screenshots/1.png' width=720 >
+- <img src='screenshots/1.png' width=750 >
 
 Sample 2
-- <img src='screenshots/2.png' width=720>
+- <img src='screenshots/2.png' width=750>
 
 Sample 3
-- <img src='screenshots/3.png' width=720>
+- <img src='screenshots/3.png' width=750>
 
 
