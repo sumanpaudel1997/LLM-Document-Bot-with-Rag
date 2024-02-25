@@ -4,7 +4,13 @@ A cli based chatbot which helps in reading the context of given documents (PDF)
 
 ## Installation
 
-To get started, follow these steps:
+📥 Clone the repo using git:
+
+```shell
+git clone https://github.com/sumanpaudel1997/LLM-Document-Bot-with-Rag.git
+```
+
+Now to get started, follow these steps:
 
 - **Using Python**:
     - 1. Clone this repository.
@@ -49,4 +55,4 @@ Sample 2
 Sample 3
 - <img src='screenshots/3.png' width=750>
 
-
+## Future
