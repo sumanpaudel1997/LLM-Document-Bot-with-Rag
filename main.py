@@ -1,14 +1,16 @@
 import os
+import logging
 
 from llama_index.llms.openai import OpenAI
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from llama_index.core.memory import ChatMemoryBuffer
 from llama_index.core import Settings
 
+# utility functions
 from utils.data_ingestion import load_documents
 from utils.qdrant_db import qdrant_vector_db
 from utils.vector_index import vector_index
-import logging
+
 
 logging.basicConfig(
                     format="%(asctime)s - %(levelname)s - %(filename)s:%(lineno)s - %(message)s"
@@ -27,31 +29,27 @@ Settings.llm = llm
 # Hugging Face Embedding
 Settings.embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-small-en-v1.5")
 
-# set memory buffer for chat conversation history for now the token limit is 3900.
+# set memory buffer for chat conversation history, for now the token limit is 3900.
 # can be increased as per need
 memory = ChatMemoryBuffer.from_defaults(token_limit=3900)
 
 def main():
     
     #ingest the documents
-    logging.info('Ingesting The Data.')
-    print('Ingesting The Data.')
+    logging.info('Ingesting The Data.') #log the ingestion
     documents = load_documents(FILE_PATH)
     
     # qdrant client and vector store
-    logging.info("Connecting to Qdrant Instance")
-    print("Connecting to Qdrant Instance")
+    logging.info("Connecting to Qdrant Instance") #log the instance connection and creation
     vector_store =qdrant_vector_db()
     
     # get the vector index
-    logging.info("Creating the Vector indices")
-    print("Creating the Vector indices")
+    logging.info("Creating the Vector indices") #log the creation of vection indices
     index = vector_index(vector_store=vector_store, data_loader=documents)
     
     
     # create a chat engine that will take the prompt
     logging.info('Creating Chat Engine')
-    print('Creating Chat Engine')
     chat_engine = index.as_chat_engine(
                     chat_mode='context',
                     memory=memory,
@@ -63,7 +61,6 @@ def main():
                     )
     
     logging.info("All OK.")
-    print("All OK.")
     #ask the user for Input prompt
     while True:
         query = input("\nAsk your Question: ")
