@@ -6,12 +6,18 @@ A cli based chatbot which helps in reading the context of given documents (PDF)
 
 To get started, follow these steps:
 
-1. Clone this repository.
-2. Create virtual environment using `python -m venv venv`.
-3. If you don't have virtual envrionment the install using `pip install virtualenv`.
-4. Activate virtual envrionment `source venv/bin/activate`.
-3. Install the required dependencies using `pip install -r requirements.txt`.
-4. Run the application with `python main.py`.
+- **Using Python**:
+    - 1. Clone this repository.
+    - 2. Create virtual environment using `python -m venv venv`.
+    - 3. If you don't have virtual envrionment the install using `pip install virtualenv`.
+    - 4. Activate virtual envrionment `source venv/bin/activate`.
+    - 3. Install the required dependencies using `pip install -r requirements.txt`.
+    - 4. Run the application with `python main.py`.
+
+- **Using Docker**:
+    - 1. create a `.env` file add your api_key OPENAI_API_KEY='yoursecretkey' or do `export OPENAI_API_KEY=<yourkey>`
+    - 2. Now build the image using your api key `docker build --build-arg OPENAI_API_KEY=$OPENAI_API_KEY -t <image name> .`
+    - 3. Now run the pythin application using  `docker run -it --name my_app --rm <image name>`
 
 ## Usage
 

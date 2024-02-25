@@ -1,3 +1,3 @@
-2024-02-25 15:50:20,673 - INFO - main.py:39 - Ingesting The Data.
-2024-02-25 15:50:20,905 - INFO - main.py:43 - Connecting to Qdrant Instance
-2024-02-25 15:50:20,928 - INFO - main.py:47 - Creating the Vector indices
+2024-02-25 15:59:25,090 - INFO - main.py:39 - Ingesting The Data.
+2024-02-25 15:59:25,311 - INFO - main.py:43 - Connecting to Qdrant Instance
+2024-02-25 15:59:25,332 - INFO - main.py:47 - Creating the Vector indices
