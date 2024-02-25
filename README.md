@@ -9,6 +9,7 @@ To get started, follow these steps:
 1. Clone this repository.
 2. Create virtual environment using `python -m venv venv`.
 3. If you don't have virtual envrionment the install using `pip install virtualenv`.
+4. Activate virtual envrionment `source venv/bin/activate`.
 3. Install the required dependencies using `pip install -r requirements.txt`.
 4. Run the application with `python main.py`.
 
