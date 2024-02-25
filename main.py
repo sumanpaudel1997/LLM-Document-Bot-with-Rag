@@ -21,7 +21,7 @@ logging.basicConfig(
 FILE_PATH = './data/docs/'
 
 # OPENAI Configuration
-api_key = os.getenv('OPENAI_API_KEY')
+api_key = os.getenv('OPENAI_API_KEY') #use your own api key to access LLM
 os.environ['OPENAI_API_KEY'] = api_key
 llm = OpenAI()
 Settings.llm = llm
@@ -62,12 +62,17 @@ def main():
     
     logging.info("All OK.")
     #ask the user for Input prompt
+    counter = 0
     while True:
         query = input("\nAsk your Question: ")
         res = chat_engine.chat(query)
         history = [(query,res)]
         logging.info(history)
         print(f"\nResponse: \n\n{res}\n\nThank you\n" + '*'*130 + '\n')
+        counter += 1
+        if counter == 5:
+            print("Query Prompting Limit Reached. Max 5 queries per session.")
+            break
         
         
 if __name__ == '__main__':

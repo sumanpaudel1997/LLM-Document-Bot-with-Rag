@@ -12,7 +12,8 @@ To get started, follow these steps:
 
 ## Usage
 
-- Use the app to do something query the pdf file !
+- Use the app to do query the pdf file.
+- The app is purely CLI based where users are prompted to ask the question of their files.
 - The app understands the context you are providing with respect to pdf file
 
 ## Folder Structure
@@ -27,4 +28,15 @@ To get started, follow these steps:
 - `Dockerfile` : Contains dockerized version of application
 - `.gitignore` : Contains list of the files that are ignored while pushing. e.g .env file, log files 
 
+
+## Sample App in Action
+
+Sample 1
+- <img src='screenshots/1.png' width=400>
+
+Sample 2
+- <img src='screenshots/2.png' width=400>
+
+Sample 3
+- <img src='screenshots/3.png' width=400>
 
