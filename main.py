@@ -5,9 +5,9 @@ from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from llama_index.core.memory import ChatMemoryBuffer
 from llama_index.core import Settings
 
-from data_ingestion import load_documents
-from qdrant_db import qdrant_vector_db
-from vector_index import vector_index
+from utils.data_ingestion import load_documents
+from utils.qdrant_db import qdrant_vector_db
+from utils.vector_index import vector_index
 import logging
 
 logging.basicConfig(

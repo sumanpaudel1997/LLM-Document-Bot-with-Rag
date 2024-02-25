@@ -21,6 +21,6 @@ def vector_index(vector_store, data_loader):
                         transformations=[SentenceSplitter(chunk_size=1024, chunk_overlap=20)],
                         storage_context=storage_context)
     # persit the storage context to local system
-    index.storage_context.persist('./vector_index')
+    index.storage_context.persist('./storage_context')
     
     return index
