@@ -61,7 +61,6 @@ Now to get started, follow these steps:
 
     - Make changes in `main.py` and `utils.qdrant_db.py` accordingly where qdrant client is located.
     - You can aslo use cloud version of weaviate. See cloud version [here](https://weaviate.io/developers/weaviate/installation/weaviate-cloud-services)
-    
 
 - **Embedding Model**
     - The default system emebedding model is HuggingFaceEmbedding: `model_name="BAAI/bge-small-en-v1.5`
@@ -82,10 +81,10 @@ Now to get started, follow these steps:
 ## Sample App in Action
 
 Sample 1
-- <img src='assets/1.png' width=750 >
+- <img src='assets/2.png' width=750 >
 
 Sample 2
-- <img src='assets/2.png' width=750>
+- <img src='assets/1.png' width=750>
 
 Sample 3
 - <img src='assets/3.png' width=750>
