@@ -29,6 +29,9 @@ llm = OpenAI()
 Settings.llm = llm
 
 # Hugging Face Embedding
+# produces embeddings 384 wide, at float32 that equals 1536 bytes each.
+# The size of all the vectors for 100 items is 153kb. 
+
 Settings.embed_model = HuggingFaceEmbedding(model_name="BAAI/bge-small-en-v1.5")
 
 # set memory buffer for chat conversation history, for now the token limit is 3900.

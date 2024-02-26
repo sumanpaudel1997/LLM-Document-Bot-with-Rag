@@ -1,3 +1,9 @@
+
+# envrionement varibale 
 .env
+
+#virtual environments
 venv
+
+#Log file
 llm.log
