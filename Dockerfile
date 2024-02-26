@@ -1,5 +1,5 @@
 # Stage 1: Build the application
-FROM python:3.8-slim-buster AS builder
+FROM python:3.10-slim-buster AS builder
 
 # Set working directory
 WORKDIR /app
@@ -14,13 +14,13 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # Stage 2: Create the final image
-FROM python:3.8-slim-buster
+FROM python:3.10-slim-buster
 
 # Set working directory
 WORKDIR /app
 
 # Copy installed dependencies from the builder stage
-COPY --from=builder /usr/local/lib/python3.8/site-packages /usr/local/lib/python3.8/site-packages
+COPY --from=builder /usr/local/lib/python3.10/site-packages /usr/local/lib/python3.10/site-packages
 
 # Copy the rest of the application code from the builder stage
 COPY --from=builder /app .
