@@ -7,8 +7,8 @@ Welcome to the chatbot system! This README file will guide you through the setup
 
 ## Prerequisite For App to Run
 
-Python version >=3.10
-Docker Optionally
+- Python version >=3.10
+- Docker Optionally
 
 ## Installation
 
