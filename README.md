@@ -58,6 +58,7 @@ Now to get started, follow these steps:
     ``` shell 
     client = weaviate.Client("http://localhost:8080")
     ```
+    
     - Make changes in `main.py` and `utils.qdrant_db.py` accordingly where qdrant client is located.
     - You can aslo use cloud version of weaviate. See cloud version [here](https://weaviate.io/developers/weaviate/installation/weaviate-cloud-services)
     
@@ -75,7 +76,7 @@ Now to get started, follow these steps:
 
             embed_model = OpenAIEmbedding(model="text-embedding-3-large")
             Settings.embed_model = embed_model
-            ```
+        ```
         - For official documentation of OpenAIEmbedding visit [here](https://docs.llamaindex.ai/en/latest/examples/embeddings/OpenAI.html)
 
 ## Sample App in Action

@@ -33,4 +33,4 @@ ENV OPENAI_API_KEY=$OPENAI_API_KEY
 # EXPOSE 8000
 
 # Command to run the application
-CMD ["python", "your_script.py"]
+CMD ["python", "main.py"]
