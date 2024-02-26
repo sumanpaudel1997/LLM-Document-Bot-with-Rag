@@ -12,6 +12,10 @@ Welcome to the chatbot system! This README file will guide you through the setup
 ``` shell
 git clone https://github.com/sumanpaudel1997/LLM-Document-Bot-with-Rag.git
 ```
+## Prerequisite For App to Run
+
+Python version >=3.10
+Docker Optionally
 
 Now to get started, follow these steps:
 
