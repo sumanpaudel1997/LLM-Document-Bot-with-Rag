@@ -14,11 +14,12 @@ Now to get started, follow these steps:
 
 - **Using Python**:
     - 1. Clone this repository.
-    - 2. Create virtual environment using `python -m venv venv`.
-    - 3. If you don't have virtual envrionment the install using `pip install virtualenv`.
-    - 4. Activate virtual envrionment `source venv/bin/activate`.
-    - 3. Install the required dependencies using `pip install -r requirements.txt`.
-    - 4. Run the application with `python main.py`.
+    - 2. Create virtual environment using ```shell python -m venv venv```.
+    - 3. Create .env file and save your OPENAI_API_KEY=yourkey on it.
+    - 4. If you don't have virtual envrionment the install using ```pip install virtualenv```.
+    - 5. Activate virtual envrionment ```source venv/bin/activate```.
+    - 6. Install the required dependencies using `pip install -r requirements.txt`.
+    - 7. Run the application with `python main.py`.
 
 - **Using Docker**:
     - 1. create a `.env` file add your api_key OPENAI_API_KEY='yoursecretkey' or do `export OPENAI_API_KEY=<yourkey>`
@@ -29,7 +30,8 @@ Now to get started, follow these steps:
 
 - Use the app to do query the pdf file.
 - The app is purely CLI based where users are prompted to ask the question of their files.
-- The app understands the context you are providing with respect to pdf file
+- The app understands the context you are providing with respect to pdf file.
+- You can aslo insert your custom pdf file into a folder >> `data/docs/yourfile.pdf`.
 
 ## Folder Structure
 - **data**: This directory contains all the data files required for the project. 
@@ -42,6 +44,7 @@ Now to get started, follow these steps:
 - `requirement.txt` : all of the dependencies needed to run the project.
 - `Dockerfile` : Contains dockerized version of application
 - `.gitignore` : Contains list of the files that are ignored while pushing. e.g .env file, log files 
+- `screenshots` : Containes the screenshots shown in the readme documents.
 
 
 ## Sample App in Action
@@ -55,4 +58,3 @@ Sample 2
 Sample 3
 - <img src='screenshots/3.png' width=750>
 
-## Future

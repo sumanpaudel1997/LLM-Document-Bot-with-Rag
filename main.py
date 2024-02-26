@@ -5,6 +5,8 @@ from llama_index.llms.openai import OpenAI
 from llama_index.embeddings.huggingface import HuggingFaceEmbedding
 from llama_index.core.memory import ChatMemoryBuffer
 from llama_index.core import Settings
+from dotenv import load_dotenv
+load_dotenv()
 
 # utility functions
 from utils.data_ingestion import load_documents
