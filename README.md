@@ -55,10 +55,10 @@ Now to get started, follow these steps:
     - For `weaviate` you have first install weviate client using `pip install weviate-client` and for llamaindex    integrations install `pip install llama-index-vector-stores-weaviate`. Optionally you can use Docker. See the docker documentation of Qdrant [here](https://weaviate.io/developers/weaviate/installation/docker-compose) and for cloud visit here (https://weaviate.io/developers/weaviate/installation/weaviate-cloud-services)
     - After installing weaviate client. Ceate connection to weaviate client on local instance using 
 
-    ``` shell 
+    ```shell 
     client = weaviate.Client("http://localhost:8080")
     ```
-    
+
     - Make changes in `main.py` and `utils.qdrant_db.py` accordingly where qdrant client is located.
     - You can aslo use cloud version of weaviate. See cloud version [here](https://weaviate.io/developers/weaviate/installation/weaviate-cloud-services)
     
@@ -70,7 +70,7 @@ Now to get started, follow these steps:
         - Install the model first using `pip install llama-index-embeddings-openai` `pip install -U openai`
         - Change the following command in `main.py` file where huggingface model is located in the code.
 
-        ``` shell
+        ```shell
             from llama_index.embeddings.openai import OpenAIEmbedding
             from llama_index.core import Settings
 
